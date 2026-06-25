@@ -1,0 +1,42 @@
+h2 {
+  color: #0a2342;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 500px;
+  background: ivory;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #0a2342;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #153e75;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}

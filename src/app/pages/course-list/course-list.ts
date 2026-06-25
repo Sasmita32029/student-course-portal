@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CourseCard } from '../../components/course-card/course-card';
+import { CourseService } from '../../services/course';
 
 @Component({
   selector: 'app-course-list',
@@ -13,26 +14,11 @@ export class CourseList {
 
   selectedCourseId = 0;
 
-  courses = [
-    {
-      id: 1,
-      name: 'Angular',
-      code: 'ANG101',
-      credits: 4
-    },
-    {
-      id: 2,
-      name: 'Java',
-      code: 'JAVA101',
-      credits: 3
-    },
-    {
-      id: 3,
-      name: 'SQL',
-      code: 'SQL101',
-      credits: 2
-    }
-  ];
+  courses: any[] = [];
+
+  constructor(private courseService: CourseService) {
+    this.courses = this.courseService.getCourses();
+  }
 
   onEnroll(id: number) {
     this.selectedCourseId = id;

@@ -4,10 +4,12 @@ import { Home } from './pages/home/home';
 import { CourseList } from './pages/course-list/course-list';
 import { StudentProfile } from './pages/student-profile/student-profile';
 import { EnrollmentForm } from './pages/enrollment-form/enrollment-form';
+import { ReactiveEnrollment } from './pages/reactive-enrollment/reactive-enrollment';
 
 export const routes: Routes = [
   { path: '', component: Home },
   { path: 'courses', component: CourseList },
   { path: 'profile', component: StudentProfile },
-  { path: 'enroll', component: EnrollmentForm }
+  { path: 'enroll', component: EnrollmentForm },
+  { path: 'reactive-enroll', component: ReactiveEnrollment }
 ];
