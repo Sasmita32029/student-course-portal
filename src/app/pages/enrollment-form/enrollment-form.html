@@ -1,0 +1,39 @@
+<h2>Course Enrollment Form</h2>
+
+<form #enrollForm="ngForm">
+
+  <label>Student Name:</label>
+  <br>
+  <input
+    type="text"
+    name="studentName"
+    required
+    minlength="3"
+    ngModel>
+  <br><br>
+
+  <label>Email:</label>
+  <br>
+  <input
+    type="email"
+    name="studentEmail"
+    required
+    ngModel>
+  <br><br>
+
+  <label>Course ID:</label>
+  <br>
+  <input
+    type="number"
+    name="courseId"
+    required
+    ngModel>
+  <br><br>
+
+  <button
+    type="submit"
+    [disabled]="enrollForm.invalid">
+    Submit
+  </button>
+
+</form>
