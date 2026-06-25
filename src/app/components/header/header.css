@@ -1,0 +1,26 @@
+header {
+  background-color: #0a2342;
+  padding: 15px 30px;
+  color: ivory;
+}
+
+h1 {
+  margin: 0;
+  color: ivory;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: ivory;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd166;
+}
