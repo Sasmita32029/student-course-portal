@@ -1,0 +1,26 @@
+<h1>{{ portalName }}</h1>
+
+<p>Manage courses and student information.</p>
+
+<h3>Portal Statistics</h3>
+
+<p>Courses Available: 12</p>
+<p>Enrolled: 3</p>
+<p>GPA: 3.8</p>
+
+<button
+  [disabled]="!isPortalActive"
+  (click)="onEnrollClick()">
+  Enroll Now
+</button>
+
+<p>{{ message }}</p>
+
+<br><br>
+
+<input
+  type="text"
+  [(ngModel)]="searchTerm"
+  placeholder="Search Course">
+
+<p>Searching for: {{ searchTerm }}</p>
